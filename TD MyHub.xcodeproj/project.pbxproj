@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DA421AD7202D316300E18156 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421AD6202D316300E18156 /* CustomButton.swift */; };
+		DA421AD9202DDF9700E18156 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421AD8202DDF9700E18156 /* HomeViewController.swift */; };
+		DA421ADB202DE08700E18156 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421ADA202DE08700E18156 /* CollectionViewCell.swift */; };
+		DA421ADD202DE61200E18156 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421ADC202DE61200E18156 /* AppModel.swift */; };
 		DA96F4EA202D283400857FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96F4E9202D283400857FC5 /* AppDelegate.swift */; };
 		DA96F4EC202D283500857FC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96F4EB202D283500857FC5 /* ViewController.swift */; };
 		DA96F4EF202D283500857FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA96F4ED202D283500857FC5 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		DA421AD6202D316300E18156 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DA421AD8202DDF9700E18156 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA421ADA202DE08700E18156 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DA421ADC202DE61200E18156 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		DA96F4E6202D283400857FC5 /* TD MyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TD MyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA96F4E9202D283400857FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA96F4EB202D283500857FC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +64,10 @@
 			children = (
 				DA96F4E9202D283400857FC5 /* AppDelegate.swift */,
 				DA96F4EB202D283500857FC5 /* ViewController.swift */,
+				DA421AD8202DDF9700E18156 /* HomeViewController.swift */,
+				DA421ADA202DE08700E18156 /* CollectionViewCell.swift */,
 				DA96F4ED202D283500857FC5 /* Main.storyboard */,
+				DA421ADC202DE61200E18156 /* AppModel.swift */,
 				DA421AD6202D316300E18156 /* CustomButton.swift */,
 				DA96F4F0202D283500857FC5 /* Assets.xcassets */,
 				DA96F4F2202D283500857FC5 /* LaunchScreen.storyboard */,
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA421ADB202DE08700E18156 /* CollectionViewCell.swift in Sources */,
+				DA421ADD202DE61200E18156 /* AppModel.swift in Sources */,
 				DA96F4EC202D283500857FC5 /* ViewController.swift in Sources */,
 				DA96F4EA202D283400857FC5 /* AppDelegate.swift in Sources */,
 				DA421AD7202D316300E18156 /* CustomButton.swift in Sources */,
+				DA421AD9202DDF9700E18156 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
