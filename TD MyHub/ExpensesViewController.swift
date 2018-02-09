@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ExpensesViewController: UIViewController {
+class ExpensesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var expenses: [String] = ["Ashley Hall", "Chris Deck", "Catherine Liggett", "Stefan Petersen", "Jugal Rathod", "Udayan Majumder"]
+    @IBOutlet weak var ExpensesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ExpensesTableView.dataSource = self
+        ExpensesTableView.delegate = self
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +25,18 @@ class ExpensesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func tableView(_ ExpensesTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Create an object of the dynamic cell “PlainCell”
+        let cell:ExpenseTableViewCell = ExpensesTableView.dequeueReusableCell(withIdentifier: "PlainCell", for: indexPath) as! ExpenseTableViewCell
+        cell.NameLabel.text = expenses[indexPath.row]
+        return cell
+    }
+    
     
 
     /*

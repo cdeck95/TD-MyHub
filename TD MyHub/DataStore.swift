@@ -52,10 +52,28 @@ final class DataStore {
         diamond.appLabel = diamondLabel
         diamond.appImage = UIImageView(image: image4)
         
+        let ewr:CollectionViewCell = CollectionViewCell()
+        let image5 = UIImage(named: "EWR")
+        let ewrLabelText = "EWR"
+        let ewrLabel = UILabel()
+        ewrLabel.text = ewrLabelText
+        ewr.appLabel = ewrLabel
+        ewr.appImage = UIImageView(image: image5)
+        
+        let arp:CollectionViewCell = CollectionViewCell()
+        let image6 = UIImage(named: "ARP")
+        let arpLabelText = "ARP"
+        let arpLabel = UILabel()
+        arpLabel.text = arpLabelText
+        arp.appLabel = arpLabel
+        arp.appImage = UIImageView(image: image6)
+        
         apps.append(diamond)
         apps.append(myHR)
         apps.append(expenses)
         apps.append(clarity)
+        apps.append(ewr)
+        apps.append(arp)
         print("in StoreApps func")
         print(apps)
     }
