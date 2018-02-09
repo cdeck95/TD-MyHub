@@ -12,10 +12,24 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet var appImage: UIImageView!
     @IBOutlet var appLabel: UILabel!
+    var notifications:Int = 0
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
-    func displayContent(image: UIImage, title: String){
-        appImage.image = image
-        appLabel.text = title
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // ...
+    }
+    
+    func displayContent(image: UIImage, title: String, notificationsIn: Int){
+        self.appImage.image = image
+        self.appLabel.text = title
+        self.notifications = notificationsIn
     }
 }
 

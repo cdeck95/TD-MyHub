@@ -9,14 +9,15 @@
 import Foundation
 import UIKit
 
-struct AppModel {
-    let name:String = ""
-    let image:String = ""
-    let notifications:Int = 0
-    
-    init(dictionary: AppModelJSON){
-        self.name = dictionary["name"]
-        self.image = dictionary["image"]
-        self.notifications = dictionary["notifications"]
-    }
-}
+//struct AppModel {
+//    let image: UIImage
+//    let label: String
+//    let notifications: Int
+//    
+////    init(arrayOfApps: [CollectionViewCell]) {
+////            self.image = app.appImage.image!
+////            self.label = app.appLabel.text!
+////            self.notifications = app.notifications
+////    }
+//}
+
