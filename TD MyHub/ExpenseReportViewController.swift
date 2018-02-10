@@ -57,9 +57,16 @@ class ExpenseReportViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return expenseArray.count
     }
     
+    @IBAction func approveExpense(_ sender: Any) {
+        let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "3") as! ExpensesViewController
+        VC1.flag = 1
+        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
+    self.navigationController!.pushViewController(VC1, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create an object of the dynamic cell “PlainCell”

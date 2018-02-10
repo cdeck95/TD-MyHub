@@ -10,6 +10,8 @@ import UIKit
 
 class ExpensesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var flag: Int = 0
+    var reportRemoved: Int = 0
     var expenses: [String] = ["Ashley Hall", "Chris Deck", "Catherine Liggett", "Stefan Petersen", "Jugal Rathod", "Udayan Majumder"]
     @IBOutlet weak var ExpensesTableView: UITableView!
     
@@ -17,7 +19,11 @@ class ExpensesViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         ExpensesTableView.dataSource = self
         ExpensesTableView.delegate = self
-        
+        print(flag)
+        if(flag == 1){
+            expenses.remove(at: reportRemoved)
+            print(expenses)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +32,7 @@ class ExpensesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     func tableView(_ ExpensesTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return expenses.count
     }
 
     

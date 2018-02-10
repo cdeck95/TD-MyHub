@@ -15,6 +15,7 @@ final class DataStore {
     
     static let sharedInstance = DataStore()
     fileprivate init() {}
+    var expense:UIImage = UIImage(named: "Expense (6)")!
     
     var apps: [CollectionViewCell] = []
     //let images: [UIImage] = [UIImage(named: "Expense.png")!, UIImage(]
@@ -37,7 +38,9 @@ final class DataStore {
         myHR.appImage = UIImageView(image: image2)
        
         let expenses:CollectionViewCell = CollectionViewCell()
-        let image3 = UIImage(named: "Expense")
+        print("in storeApps func")
+        print(expense)
+        var image3 = expense
         expenses.appImage = UIImageView(image: image3)
         let expenseLabelText = "Expenses"
         let expenseLabel = UILabel()
@@ -74,7 +77,6 @@ final class DataStore {
         apps.append(clarity)
         apps.append(ewr)
         apps.append(arp)
-        print("in StoreApps func")
         print(apps)
     }
         
