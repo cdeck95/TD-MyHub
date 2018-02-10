@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DA421AD7202D316300E18156 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421AD6202D316300E18156 /* CustomButton.swift */; };
+		DA421AD9202DDF9700E18156 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421AD8202DDF9700E18156 /* HomeViewController.swift */; };
+		DA421ADB202DE08700E18156 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421ADA202DE08700E18156 /* CollectionViewCell.swift */; };
+		DA421ADF202DFC2400E18156 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421ADE202DFC2400E18156 /* DataStore.swift */; };
+		DA421AE1202DFC4900E18156 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421AE0202DFC4900E18156 /* AppModel.swift */; };
+		DA421AE3202DFCC100E18156 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA421AE2202DFCC100E18156 /* APIClient.swift */; };
+		DA468FC0202E2A2F0055F471 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA468FBF202E2A2F0055F471 /* ExpensesViewController.swift */; };
+		DA468FC2202E33930055F471 /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA468FC1202E33930055F471 /* ExpenseTableViewCell.swift */; };
+		DA468FC4202E3A1D0055F471 /* ExpenseReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA468FC3202E3A1D0055F471 /* ExpenseReportViewController.swift */; };
+		DA468FC6202E401A0055F471 /* ExpenseReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA468FC5202E401A0055F471 /* ExpenseReportTableViewCell.swift */; };
+		DA468FC8202E4C330055F471 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA468FC7202E4C330055F471 /* Expense.swift */; };
 		DA96F4EA202D283400857FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96F4E9202D283400857FC5 /* AppDelegate.swift */; };
 		DA96F4EC202D283500857FC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96F4EB202D283500857FC5 /* ViewController.swift */; };
 		DA96F4EF202D283500857FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA96F4ED202D283500857FC5 /* Main.storyboard */; };
@@ -17,6 +27,16 @@
 
 /* Begin PBXFileReference section */
 		DA421AD6202D316300E18156 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DA421AD8202DDF9700E18156 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DA421ADA202DE08700E18156 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DA421ADE202DFC2400E18156 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		DA421AE0202DFC4900E18156 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		DA421AE2202DFCC100E18156 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DA468FBF202E2A2F0055F471 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		DA468FC1202E33930055F471 /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		DA468FC3202E3A1D0055F471 /* ExpenseReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseReportViewController.swift; sourceTree = "<group>"; };
+		DA468FC5202E401A0055F471 /* ExpenseReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseReportTableViewCell.swift; sourceTree = "<group>"; };
+		DA468FC7202E4C330055F471 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		DA96F4E6202D283400857FC5 /* TD MyHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TD MyHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA96F4E9202D283400857FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA96F4EB202D283500857FC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +76,19 @@
 		DA96F4E8202D283400857FC5 /* TD MyHub */ = {
 			isa = PBXGroup;
 			children = (
+				DA468FBF202E2A2F0055F471 /* ExpensesViewController.swift */,
+				DA468FC1202E33930055F471 /* ExpenseTableViewCell.swift */,
 				DA96F4E9202D283400857FC5 /* AppDelegate.swift */,
+				DA421AE2202DFCC100E18156 /* APIClient.swift */,
 				DA96F4EB202D283500857FC5 /* ViewController.swift */,
+				DA421AD8202DDF9700E18156 /* HomeViewController.swift */,
+				DA421ADE202DFC2400E18156 /* DataStore.swift */,
+				DA421AE0202DFC4900E18156 /* AppModel.swift */,
+				DA421ADA202DE08700E18156 /* CollectionViewCell.swift */,
 				DA96F4ED202D283500857FC5 /* Main.storyboard */,
+				DA468FC5202E401A0055F471 /* ExpenseReportTableViewCell.swift */,
+				DA468FC3202E3A1D0055F471 /* ExpenseReportViewController.swift */,
+				DA468FC7202E4C330055F471 /* Expense.swift */,
 				DA421AD6202D316300E18156 /* CustomButton.swift */,
 				DA96F4F0202D283500857FC5 /* Assets.xcassets */,
 				DA96F4F2202D283500857FC5 /* LaunchScreen.storyboard */,
@@ -139,9 +169,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA468FC2202E33930055F471 /* ExpenseTableViewCell.swift in Sources */,
+				DA421AE1202DFC4900E18156 /* AppModel.swift in Sources */,
+				DA421ADB202DE08700E18156 /* CollectionViewCell.swift in Sources */,
+				DA421ADF202DFC2400E18156 /* DataStore.swift in Sources */,
+				DA468FC6202E401A0055F471 /* ExpenseReportTableViewCell.swift in Sources */,
+				DA421AE3202DFCC100E18156 /* APIClient.swift in Sources */,
 				DA96F4EC202D283500857FC5 /* ViewController.swift in Sources */,
 				DA96F4EA202D283400857FC5 /* AppDelegate.swift in Sources */,
+				DA468FC4202E3A1D0055F471 /* ExpenseReportViewController.swift in Sources */,
 				DA421AD7202D316300E18156 /* CustomButton.swift in Sources */,
+				DA421AD9202DDF9700E18156 /* HomeViewController.swift in Sources */,
+				DA468FC8202E4C330055F471 /* Expense.swift in Sources */,
+				DA468FC0202E2A2F0055F471 /* ExpensesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
